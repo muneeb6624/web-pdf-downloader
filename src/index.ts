@@ -30,10 +30,10 @@ export async function generatePDF(options: PDFOptions): Promise<Buffer> {
 
     // Expand all <details>
     await page.evaluate(() => {
-      function expandAllDetails(root = document) {
+      function expandAllDetails(root: ParentNode = document) {
         root.querySelectorAll("details").forEach((d) => {
           d.open = true;
-          expandAllDetails(d);
+          expandAllDetails(d.shadowRoot || d);
         });
       }
       expandAllDetails();

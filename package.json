@@ -14,10 +14,20 @@
     "html-to-pdf",
     "nextjs",
     "react",
-    "node"
+    "node",
+    "pdf-generator",
+    "pdf-downloader"
   ],
   "author": "Muhammad Muneeb",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muneeb6624/web-pdf-downloader.git"
+  },
+  "homepage": "https://github.com/muneeb6624/web-pdf-downloader#readme",
+  "bugs": {
+    "url": "https://github.com/muneeb6624/web-pdf-downloader/issues"
+  },
   "dependencies": {
     "puppeteer-core": "^22.6.5"
   },
